@@ -1,0 +1,36 @@
+@import "modularscale"
+@import "../settings"
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* ////////////////  BASELINE GRID            //////////// */
+/* /////////////////////////////////////////////////////// */
+
+// Overlay grid
+.is-active-grid
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+	background-image: linear-gradient(cyan 0%, rgba(255,255,255,0) 1px)
+	background-repeat: repeat-y
+	// background-position: center 5px
+	background-size: 100% $base-line-height/2
+	pointer-events: none
+
+
+
+@media screen and #{breakpoint(small only)}
+	.toggle-grid
+		float: left
+		margin-top: $base-line-height/2
+		margin-left: $base-line-height/2
+
+
+
+@media screen and #{breakpoint(medium)}
+	.toggle-grid
+		position: absolute
+		top: $base-line-height
+		left: $base-line-height

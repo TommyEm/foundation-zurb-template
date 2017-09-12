@@ -1,0 +1,313 @@
+@import "modularscale"
+@import "settings"
+// @import "vendor/hljs/monokai-sublime"
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* ////////////////  STYLEGUIDE               //////////// */
+/* /////////////////////////////////////////////////////// */
+
+// 1. General
+// 2. Layout
+// 3. Colors
+// 4. Summaries
+// 3. Tabs
+// 3. Sticky
+
+
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 1. GENERAL                //////////// */
+/* /////////////////////////////////////////////////////// */
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 2. LAYOUT                 //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.header-styleguide
+	margin-bottom: $base-line-height
+	border-bottom: 3px solid $color2-dark
+
+.header-styleguide .logo
+	height: $base-line-height*2
+
+.header-styleguide h1
+	margin: 0
+	text-align: right
+	line-height: $base-line-height*2
+
+.styleguide h1
+	font-weight: 300
+
+
+/* This styles individual sections of the style guide */
+.ss-section:not(:last-child)
+	padding-bottom: 4rem
+	border-bottom: 2px solid #ccc
+	margin-bottom: 4rem
+
+
+/* This styles code blocks used for examples. */
+.ss-code code
+	display: block
+	padding: 1rem
+	overflow-x: scroll
+	margin-bottom: 1.5rem
+
+
+/* This styles the example rows used in the grid documentation. */
+.row.display
+	background: #eee
+	font-size: 11px
+	margin-bottom: 10px
+	line-height: 2rem
+	border: solid 1px #c6c6c6
+	margin-left: 0 !important
+	margin-right: 0 !important
+
+.row.display .columns:nth-child(2),
+.row.display .columns.small-centered,
+.row.display .columns.large-centered
+	background: #e1e1e1
+
+.row.display .columns.color-end
+	background: #d4d4d4
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 3. COLORS                 //////////// */
+/* /////////////////////////////////////////////////////// */
+
+/* This styles the color blocks used in the color documentation. */
+.color-block
+	display: block
+	margin-bottom: $base-line-height
+	padding: $base-line-height/2 $base-line-height/2
+	border-radius: $radius/2
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+	text-transform: uppercase
+	&:after
+		float: right
+		font-weight: 500
+
+.color-block span
+	display: block
+	width: 100%
+	height: $base-line-height*5
+
+
+// Brand colors
+.color-block.primary-color:after
+	content: "" + $primary-color
+
+.color-block.primary-color > span
+	background-color: $primary-color
+
+.color-block.primary-color-light:after
+	content: "" + $primary-color-light
+
+.color-block.primary-color-light > span
+	background-color: $primary-color-light
+
+.color-block.primary-color-dark:after
+	content: "" + $primary-color-dark
+
+.color-block.primary-color-dark > span
+	background-color: $primary-color-dark
+
+
+.color-block.secondary-color:after
+	content: "" + $secondary-color
+
+.color-block.secondary-color > span
+	background-color: $secondary-color
+
+.color-block.secondary-color-light:after
+	content: "" + $secondary-color-light
+
+.color-block.secondary-color-light > span
+	background-color: $secondary-color-light
+
+.color-block.secondary-color-dark:after
+	content: "" + $secondary-color-dark
+
+.color-block.secondary-color-dark > span
+	background-color: $secondary-color-dark
+
+
+.color-block.tertiary-color:after
+	content: "" + $tertiary-color
+
+.color-block.tertiary-color > span
+	background-color: $tertiary-color
+
+.color-block.tertiary-color-light:after
+	content: "" + $tertiary-color-light
+
+.color-block.tertiary-color-light > span
+	background-color: $tertiary-color-light
+
+.color-block.tertiary-color-dark:after
+	content: "" + $tertiary-color-dark
+
+.color-block.tertiary-color-dark > span
+	background-color: $tertiary-color-dark
+
+
+// Typography colors
+.color-block.text-color:after
+	content: "" + $text-color
+
+.color-block.text-color > span
+	background-color: $text-color
+
+
+.color-block.headings-color:after
+	content: "" + $text-color
+
+.color-block.headings-color > span
+	background-color: $text-color
+
+
+
+// Additional colors
+
+
+
+// Form colors
+.color-block.valid-color:after
+	content: "" + $valid-color
+
+.color-block.valid-color > span
+	background-color: $valid-color
+
+
+.color-block.invalid-color:after
+	content: "" + $invalid-color
+
+.color-block.invalid-color > span
+	background-color: $invalid-color
+
+
+.color-block.warning-color:after
+	content: "" + $warning-color
+
+.color-block.warning-color > span
+	background-color: $warning-color
+
+
+.color-block.placeholder-color:after
+	content: "" + $placeholder-color
+
+.color-block.placeholder-color > span
+	background-color: $placeholder-color
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 4. SUMMARIES              //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.summary-container
+	background-color: $grey-lighter
+
+.summary .tabs-section-title
+	margin: 0
+	padding: $base-font-size/2
+	border-top: 1px solid $grey-light
+	border-right: 1px solid $grey-light
+	background-color: $white
+	font-size: rem-calc(ms(1))
+	font-weight: 500
+	line-height: $base-line-height/2
+
+.summary .tabs-title > a
+	padding-top: $base-line-height/3
+	padding-bottom: $base-line-height/3
+
+.summary-tags
+	display: block
+
+.summary-tags .tag
+	margin-bottom: 0
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 5. TABS                   //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.tabs.vertical
+	border: none
+	background-color: transparent
+
+.vertical .tabs-title > a
+	position: relative
+	background-color: $grey-lighter
+	color: $text-color
+	&:hover
+		background-color: $color1-light
+		color: $white
+
+.vertical .tabs-title.is-active > a
+	background-color: $color1
+	color: $white
+
+
+
+@media screen and #{breakpoint(medium)}
+	.vertical .tabs-title > a
+		&:after
+			content: ""
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translate(0, -50%)
+			width: 0
+			height: 0
+			border-top: $base-line-height/2 solid transparent
+			border-bottom: $base-line-height/2 solid transparent
+			border-left: $base-line-height/2.5 solid transparent
+			transition: none
+
+	.vertical .tabs-title.is-active > a
+		&:after
+			transform: translate(100%, -50%)
+			border-left-color: $color1
+			transition: all 100ms ease-out
+
+
+
+@media screen and #{breakpoint(large)}
+	.tabs-content
+		padding: $base-line-height*2
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 6. STICKY                 //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.sticky
+	width: 100%
+
+
+
