@@ -1,0 +1,84 @@
+///////////////////////////////////////////////////////
+////////////////  COLORS                   ////////////
+///////////////////////////////////////////////////////
+
+// 1. Accent colors
+// 2. Shades of grey
+// 3. Typography colors
+// 4. Form colors
+// 5. Misc
+
+
+
+
+
+///////////////////////////////////////////////////////
+//////////////// 1. Accent colors          ////////////
+///////////////////////////////////////////////////////
+
+$color1: blue //
+$color2: green //
+$color3: orange //
+
+$color1-light: scale-color($color1, $lightness: 10%)
+$color1-dark: scale-color($color1, $lightness: -20%)
+
+$color2-light: scale-color($color2, $lightness: 60%)
+$color2-dark: scale-color($color2, $lightness: 40%)
+
+$color3-light: scale-color($color3, $lightness: 20%)
+$color3-dark: scale-color($color3, $lightness: -50%)
+
+
+// Semantic helpers
+$primary-color: $color1
+$secondary-color: $color2
+$tertiary-color: $color3
+
+$primary-color-light: $color1-light
+$primary-color-dark: $color1-dark
+
+$secondary-color-light: $color2-light
+$secondary-color-dark: $color2-dark
+
+$tertiary-color-light: $color3-light
+$tertiary-color-dark: $color3-dark
+
+
+
+
+///////////////////////////////////////////////////////
+//////////////// 2. Shades of grey         ////////////
+///////////////////////////////////////////////////////
+
+$white: #fff
+
+$grey: #aaa
+$grey-light: scale-color($grey, $lightness: 10%)
+$grey-lighter: scale-color($grey, $lightness: 20%)
+$grey-dark: scale-color($grey, $lightness: -10%)
+$grey-darker: scale-color($grey, $lightness: -80%)
+
+$black: #000
+
+
+
+
+///////////////////////////////////////////////////////
+//////////////// 3. Typography colors      ////////////
+///////////////////////////////////////////////////////
+
+$text-color: $grey-darker
+
+
+
+
+///////////////////////////////////////////////////////
+//////////////// 4. Form colors            ////////////
+///////////////////////////////////////////////////////
+
+$valid-color: green
+$invalid-color: red
+$warning-color: orange
+
+$placeholder-color: $grey-light
