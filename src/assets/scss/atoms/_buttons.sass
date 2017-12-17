@@ -6,78 +6,146 @@
 /* ////////////////  BUTTONS                  //////////// */
 /* /////////////////////////////////////////////////////// */
 
-// 1. General
-
-
+// 1. Button sizes
+// 2. Button colors
+// 3. Button icons
 
 
 
 
 
 /* /////////////////////////////////////////////////////// */
-/* //////////////// 1. General                //////////// */
+/* //////////////// 1. Button sizes           //////////// */
 /* /////////////////////////////////////////////////////// */
 
 .button
 	display: inline-block
-	padding: $base-line-height/1.5 $base-font-size*1.5
 	line-height: $base-line-height/1.25
 
 .button.tiny
-	padding: $base-line-height/6 $base-font-size/2
+	padding: $space-inset-squish-tiny
 	line-height: $base-line-height/1.5
 
 .button.small
-	padding: $base-line-height/3 $base-font-size/1.5
+	padding: $space-inset-squish-small
 	line-height: $base-line-height/1.4
 
 .button.large
-	padding: $base-line-height/1.25 $base-font-size*1.5
+	padding: $space-inset-squish-medium
 	line-height: $base-line-height
 
-.button-primary
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 2. Button colors          //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.button-primary:not(.hollow)
 	background-color: $primary-color
 	&:hover,
 	&:active,
 	&:focus
 		background-color: $primary-color-light
 
-.button-secondary
+.button-secondary:not(.hollow)
 	background-color: $secondary-color
 	&:hover,
 	&:active,
 	&:focus
 		background-color: $secondary-color-light
 
-.button-tertiary
+.button-tertiary:not(.hollow)
 	background-color: $tertiary-color
 	&:hover,
 	&:active,
 	&:focus
 		background-color: $tertiary-color-light
 
-.right-arrow
-	background-image: url(../img/icons/arrow-right.svg)
-	background-position: right $base-font-size*1.25 center
-	background-repeat: no-repeat
-	background-size: auto $base-line-height/1.25
-
-.button.right-arrow
-	padding-right: $base-font-size*3.5
-
-.left-arrow
-	background-image: url(../img/icons/arrow-left.svg)
-	background-position: $base-font-size*1.25 center
-	background-repeat: no-repeat
-	background-size: auto $base-line-height/1.25
-
-.button.left-arrow
-	padding-left: $base-font-size*3.5
 
 
 
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 3. Ghost buttons          //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.hollow.button-primary
+	border-color: $primary-color
+	color: $primary-color
+	&:hover,
+	&:active,
+	&:focus
+		border-color: $primary-color-light
+		color: $primary-color-light
 
 
-	/* /////////////////////////////////////////////////////// */
-	/* //////////////// 2. _________              //////////// */
-	/* /////////////////////////////////////////////////////// */
+.hollow.button-secondary
+	border-color: $secondary-color
+	color: $secondary-color
+	&:hover,
+	&:active,
+	&:focus
+		border-color: $secondary-color-light
+		color: $secondary-color-light
+
+.hollow,
+.hollow.button-tertiary
+	border-color: $tertiary-color-dark
+	color: $tertiary-color-dark
+	&:hover,
+	&:active,
+	&:focus
+		border-color: $tertiary-color
+		color: $tertiary-color
+
+
+
+
+
+/* /////////////////////////////////////////////////////// */
+/* //////////////// 4. Button icons           //////////// */
+/* /////////////////////////////////////////////////////// */
+
+.button-icon-right,
+.button-icon-left
+	background-size: auto $base-font-size
+
+
+/* Right icon */
+.button-icon-right
+	padding-right: $space-inline-xlarge
+	background-position: right $space-inline-small center
+
+.tiny.button-icon-right
+	padding-right: $space-inline-medium
+	background-position: right $space-inline-xtiny center
+	background-size: auto $base-font-size/1.5
+
+.small.button-icon-right
+	padding-right: $space-inline-large
+	background-position: right $space-inline-tiny center
+	background-size: auto $base-font-size/1.25
+
+.large.button-icon-right
+	padding-right: $space-inline-xlarge
+	background-position: right $space-inline-small center
+
+
+/* Left icon */
+.button-icon-left
+	padding-left: $space-inline-xlarge
+	background-position: $space-inline-small center
+
+.tiny.button-icon-left
+	padding-left: $space-inline-medium
+	background-position: $space-inline-xtiny center
+	background-size: auto $base-font-size/1.5
+
+.small.button-icon-left
+	padding-left: $space-inline-large
+	background-position: $space-inline-tiny center
+	background-size: auto $base-font-size/1.25
+
+.large.button-icon-left
+	padding-left: $space-inline-xlarge
+	background-position: $space-inline-small center

@@ -9,19 +9,19 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<!-- STYLES -->
-		<link rel="stylesheet" href="{{root}}css/app.css">
-		<link rel="stylesheet" href="{{root}}css/style-ha.css">
-		<link rel="stylesheet" href="{{root}}css/styleguide.css">
+		<link rel="stylesheet" href="{{root}}assets/css/app.css">
+		<link rel="stylesheet" href="{{root}}assets/css/project.css">
+		<link rel="stylesheet" href="{{root}}assets/css/styleguide.css">
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
 	</head>
 	<body>
 
 		<header class="header-global header-styleguide">
-			<div class="expanded row">
-				<div class="medium-6 columns">
+			<div class="grid-x grid-padding-x">
+				<div class="medium-6 cell">
 					<!-- LOGO -->
 				</div>
-				<div class="medium-6 columns">
+				<div class="medium-6 cell">
 					<h1 class="styleguide-h1">Style Guide</h1>
 				</div>
 			</div>
@@ -31,10 +31,10 @@
 
 		<main class="main-content">
 
-			<div class="expanded row collapse">
-				<div class="medium-10 medium-offset-2 columns">
+			<div class="grid-x">
+				<div class="medium-10 medium-offset-2 cell">
 
-					<div class="limited row sub-section">
+					<div class="limited grid-x sub-section">
 						<div class="column">
 							<p class="lead">Ce site et ce style guide utilisent <strong>Foundation for Sites</strong>. <a href="http://foundation.zurb.com/docs/" class="float-right button small button-secondary">Foundation Docs</a></p>
 						</div>
@@ -42,8 +42,8 @@
 				</div>
 			</div>
 
-			<div class="expanded row collapse tableofcontent-container">
-				<div class="medium-2 columns sticky-container" data-sticky-container>
+			<div class="grid-x tableofcontent-container">
+				<div class="medium-2 cell sticky-container" data-sticky-container>
 					<div class="sticky" data-sticky data-anchor="tabscontent" data-margin-top="0">
 						<ul id="tableofcontent" class="vertical tabs" data-tabs>
 							{{#each pages}}
@@ -57,7 +57,7 @@
 					</div>
 				</div>
 
-				<div id="tabscontent" class="medium-10 columns" data-tabs-content="tableofcontent">
+				<div id="tabscontent" class="medium-10 cell" data-tabs-content="tableofcontent">
 					<div class="tabs-content vertical">
 						<div class="row limited column">
 						{{#each pages}}
@@ -72,7 +72,7 @@
 
 		</main>
 
-		<script src="{{root}}js/app.js"></script>
+		<script src="{{root}}assets/js/app.js"></script>
 
 		<script>
 			// $(document).ready( function() {

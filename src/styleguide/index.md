@@ -329,19 +329,53 @@ As you've probably noticed in the examples above, you have access to a small, me
 
 # Spacing
 
-The basic unit for spacing is set by the body text line height. This value is stored in the SASS variable <code>$base-line-height</code>, which can then be is used to determine the gutter sizes and any margin or padding. Set different spacing values by multiplying or dividing the variable.
-
-<pre><code>margin-bottom: $base-line-height*3
-padding: $base-line-height/2
-</code></pre>
+The basic unit for spacing is set by the body text line height. From this, we set different spacing sizes by multiplying or dividing the variable.
 
 ---
 
 ## Grid spacing
 
-Gutter small :
+<div class="gutter-small">Gutter small :</div>
 
-Gutter medium :
+<div class="gutter-medium">Gutter medium :</div>
+
+---
+
+### Stack spacing
+
+Vertical space between stacked elements.
+
+**Sizes**
+
+<div class="space-stack-xxxtiny"></div>
+<div class="space-stack-xxtiny"></div>
+<div class="space-stack-xtiny"></div>
+<div class="space-stack-tiny"></div>
+<div class="space-stack-small"></div>
+<div class="space-stack-medium"></div>
+<div class="space-stack-large"></div>
+<div class="space-stack-xlarge"></div>
+<div class="space-stack-xxlarge"></div>
+<div class="space-stack-xxxlarge"></div>
+
+---
+
+### Inline spacing
+
+Horizontal space between inline elements.
+
+**Sizes**
+
+<div class="space-inline-xxxtiny"></div>
+<div class="space-inline-xxtiny"></div>
+<div class="space-inline-xtiny"></div>
+<div class="space-inline-tiny"></div>
+<div class="space-inline-small"></div>
+<div class="space-inline-medium"></div>
+<div class="space-inline-large"></div>
+<div class="space-inline-xlarge"></div>
+<div class="space-inline-xxlarge"></div>
+<div class="space-inline-xxxlarge"></div>
 
 ---
 
@@ -354,6 +388,21 @@ Gutter medium :
 	</footer>
 </blockquote>
 
+**Sizes**
+
+<div class="space-inset-xxxtiny"></div>
+<div class="space-inset-xxtiny"></div>
+<div class="space-inset-xtiny"></div>
+<div class="space-inset-tiny"></div>
+<div class="space-inset-small"></div>
+<div class="space-inset-medium"></div>
+<div class="space-inset-large"></div>
+<div class="space-inset-xlarge"></div>
+<div class="space-inset-xxlarge"></div>
+<div class="space-inset-xxxlarge"></div>
+
+---
+
 ### Squish inset spacing
 
 <blockquote>
@@ -362,6 +411,21 @@ Gutter medium :
 		<i>— <a href="https://medium.com/eightshapes-llc/space-in-design-systems-188bcbae0d62#.knecyjj74">Source</a></i>
 	</footer>
 </blockquote>
+
+**Sizes**
+
+<div class="space-inset-squish-xxxtiny"></div>
+<div class="space-inset-squish-xxtiny"></div>
+<div class="space-inset-squish-xtiny"></div>
+<div class="space-inset-squish-tiny"></div>
+<div class="space-inset-squish-small"></div>
+<div class="space-inset-squish-medium"></div>
+<div class="space-inset-squish-large"></div>
+<div class="space-inset-squish-xlarge"></div>
+<div class="space-inset-squish-xxlarge"></div>
+<div class="space-inset-squish-xxxlarge"></div>
+
+---
 
 ### Stretch inset spacing
 
@@ -372,65 +436,18 @@ Gutter medium :
 	</footer>
 </blockquote>
 
-### Stack spacing
+**Sizes**
 
-Vertical space between stacked elements.
-
-### Inline spacing
-
-Horizontal space between inline elements.
-
-Variables:
-
-<pre><code class="scss">// Inset
-$space-inset-tiny: $base-line-height/2
-$space-inset-small: $base-line-height/1.5
-$space-inset-medium: $base-line-height
-$space-inset-large: $base-line-height*1.5
-$space-inset-xlarge: $base-line-height*2
-$space-inset-xxlarge: $base-line-height*3
-
-$space-inset: $space-inset-medium
-
-$space-inset-squish-tiny: $base-line-height/3 $base-line-height/2
-$space-inset-squish-small: $base-line-height/2 $base-line-height/1.5
-$space-inset-squish-medium: $base-line-height/1.5 $base-line-height
-$space-inset-squish-large: $base-line-height $base-line-height*1.5
-$space-inset-squish-xlarge: $base-line-height*1.5 $base-line-height*2
-$space-inset-squish-xlarge: $base-line-height*2 $base-line-height*3
-
-$space-inset-stretch: $base-line-height $base-line-height/2
-
-$space-inset-squish-tiny: $base-line-height/2 $base-line-height/3
-$space-inset-squish-small: $base-line-height/1.5 $base-line-height/2
-$space-inset-squish-medium: $base-line-height $base-line-height/1.5
-$space-inset-squish-large: $base-line-height*1.5 $base-line-height
-$space-inset-squish-xlarge: $base-line-height*2 $base-line-height*1.5
-$space-inset-squish-xlarge: $base-line-height*3 $base-line-height*2
-
-// Stack
-$space-stack-tiny: $base-line-height/2
-$space-stack-small: $base-line-height/1.5
-$space-stack-medium: $base-line-height
-$space-stack-large: $base-line-height*1.5
-$space-stack-xlarge: $base-line-height*2
-$space-stack-xxlarge: $base-line-height*3
-
-// Inline
-$space-inline-tiny: $base-font-size/2
-$space-inline-small: $base-font-size/1.5
-$space-inline-medium: $base-font-size
-$space-inline-large: $base-font-size*1.5
-$space-inline-xlarge: $base-font-size*2
-$space-inline-xxlarge: $base-font-size*3
-</code></pre>
-
-
-
-
-# UI Components
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum impedit similique nesciunt, quo, atque magnam aliquid porro aspernatur? Commodi eum, doloribus illo quae perspiciatis dolor esse enim, deserunt delectus praesentium!
+<div class="space-inset-stretch-xxxtiny"></div>
+<div class="space-inset-stretch-xxtiny"></div>
+<div class="space-inset-stretch-xtiny"></div>
+<div class="space-inset-stretch-tiny"></div>
+<div class="space-inset-stretch-small"></div>
+<div class="space-inset-stretch-medium"></div>
+<div class="space-inset-stretch-large"></div>
+<div class="space-inset-stretch-xlarge"></div>
+<div class="space-inset-stretch-xxlarge"></div>
+<div class="space-inset-stretch-xxxlarge"></div>
 
 
 
@@ -502,6 +519,96 @@ These buttons are used for less important, tertiary actions on a page.
 <a href="#" class="button button-tertiary">Regular button<br>two line</a>
 <a href="#" class="button button-tertiary small">Small button<br>two line</a>
 <a href="#" class="button button-tertiary tiny">Tiny button<br>two line</a>
+```
+
+---
+
+## Ghost Buttons
+
+These buttons are used for less important, tertiary actions on a page.
+
+```html_example
+<a href="#" class="button hollow button-primary large">Large button</a>
+<a href="#" class="button hollow button-primary">Regular button</a>
+<a href="#" class="button hollow button-primary small">Small button</a>
+<a href="#" class="button hollow button-primary tiny">Tiny button</a>
+<br>
+<a href="#" class="button hollow button-primary large">Large button<br>two line</a>
+<a href="#" class="button hollow button-primary">Regular button<br>two line</a>
+<a href="#" class="button hollow button-primary small">Small button<br>two line</a>
+<a href="#" class="button hollow button-primary tiny">Tiny button<br>two line</a>
+```
+
+```html_example
+<a href="#" class="button hollow button-secondary large">Large button</a>
+<a href="#" class="button hollow button-secondary">Regular button</a>
+<a href="#" class="button hollow button-secondary small">Small button</a>
+<a href="#" class="button hollow button-secondary tiny">Tiny button</a>
+<br>
+<a href="#" class="button hollow button-secondary large">Large button<br>two line</a>
+<a href="#" class="button hollow button-secondary">Regular button<br>two line</a>
+<a href="#" class="button hollow button-secondary small">Small button<br>two line</a>
+<a href="#" class="button hollow button-secondary tiny">Tiny button<br>two line</a>
+```
+
+```html_example
+<a href="#" class="button hollow button-tertiary large">Large button</a>
+<a href="#" class="button hollow button-tertiary">Regular button</a>
+<a href="#" class="button hollow button-tertiary small">Small button</a>
+<a href="#" class="button hollow button-tertiary tiny">Tiny button</a>
+<br>
+<a href="#" class="button hollow button-tertiary large">Large button<br>two line</a>
+<a href="#" class="button hollow button-tertiary">Regular button<br>two line</a>
+<a href="#" class="button hollow button-tertiary small">Small button<br>two line</a>
+<a href="#" class="button hollow button-tertiary tiny">Tiny button<br>two line</a>
+```
+
+---
+
+## Buttons with icons
+
+These buttons are used for lesser important actions on a page, sometimes used beside a filled button to create hierarchy.
+
+**Icon on the right:**
+
+```html_example
+<a href="#" class="button button-primary button-icon-right icon-arrow-right large">Large button</a>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right">Regular button</a>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right small">Small button</a>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right tiny">Tiny button</a>
+<br>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right large">Large button<br>two line</a>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right">Regular button<br>two line</a>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right small">Small button<br>two line</a>
+<a href="#" class="button button-primary button-icon-right icon-arrow-right tiny">Tiny button<br>two line</a>
+```
+
+**Icon on the left:**
+
+```html_example
+<a href="#" class="button button-primary button-icon-left icon-arrow-left large">Large button</a>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left">Regular button</a>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left small">Small button</a>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left tiny">Tiny button</a>
+<br>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left large">Large button<br>two line</a>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left">Regular button<br>two line</a>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left small">Small button<br>two line</a>
+<a href="#" class="button button-primary button-icon-left icon-arrow-left tiny">Tiny button<br>two line</a>
+```
+
+**It works with hollow buttons and different colors too!**
+
+```html_example
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right large">Large button</a>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right">Regular button</a>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right small">Small button</a>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right tiny">Tiny button</a>
+<br>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right large">Large button<br>two line</a>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right">Regular button<br>two line</a>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right small">Small button<br>two line</a>
+<a href="#" class="button hollow button-secondary button-icon-right icon-arrow-right tiny">Tiny button<br>two line</a>
 ```
 
 
